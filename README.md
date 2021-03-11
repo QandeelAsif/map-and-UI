@@ -3,6 +3,7 @@
 run npm install
 
 IF SUCH ERROR OCCUR:
+
 1- unable to load script from assets 'index.android.bundle'
 
 SOLUTION:
