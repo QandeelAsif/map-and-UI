@@ -15,7 +15,12 @@ run:
 'react-native run-android'
 
 2- Error: Command failed: gradlew.bat app:installDebug
+
+
 cd android
+
 gradlew.bat installDebug
+
 cd ..
+
 react-native run-android
