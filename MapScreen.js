@@ -26,13 +26,21 @@ export default class MapScreen extends Component{
       (err) => console.warn(err),
       {enableHighAccuracy: true, timeout: 20000, maximumAge: 10000},
     );
+    this.sendToServer()
   }
 
   componentWillUnmount() {
+  
     Geolocation.clearWatch(this.locationWatchId);
   }
 
+  sendToServer(){
+    var coords = {lat: this.state.userLatitude, lon: this.state.userLongitude};
+    console.log(coords);
+  }
+
   render(){
+    
     return(
       <View style={styles.container}>
      <MapView
